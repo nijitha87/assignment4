@@ -14,7 +14,13 @@ const CountryList: React.FC<Props> = ({ countries }: Props) => {
 
   const selectCountries = (id: string) => {
     const selected = [...countriesSelected];
-    selected.push(id);
+    const selectedIndex = countriesSelected.indexOf(id);
+    if(selectedIndex === -1) {
+      selected.push(id);
+    }
+    else {
+      selected.splice(selectedIndex,1)
+    }
     setCountriesSelected(selected);
   };
 

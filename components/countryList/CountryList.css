@@ -1,12 +1,10 @@
-.country {
+.country p {
+  cursor: pointer;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-p {
-  cursor: pointer;
-}
 
-p.selected {
+.country p.selected {
   color: #e3127e;
 }

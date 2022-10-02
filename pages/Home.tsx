@@ -27,7 +27,7 @@ const HomePage = () => {
   }, []);
 
   const getCountryList = (continent: string) => {
-    const countries = countryList.reduce((list, country) => {
+    const countries = countryList.reduce((list: country[], country) => {
       if (country.continent === continent) {
         list.push({
           id: country.alpha2Code,
