@@ -1,0 +1,14 @@
+.btn-flat {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.btn-flat:first-child:hover,
+.btn-flat:first-child:active, .btn.active {
+  color: #e3127e;
+  background-color: #fff;
+  border-color: #e3127e;
+}

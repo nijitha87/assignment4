@@ -1,0 +1,12 @@
+#root .header-bar {
+  box-shadow: none;
+  background-color: #000;
+  height: 150px;
+}
+.heading {
+  color: #fff;
+  font-size: 2rem;
+}
+.navbar-brand {
+  margin-right: 0;
+}

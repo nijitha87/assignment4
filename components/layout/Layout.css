@@ -1,0 +1,6 @@
+#root {
+  min-height: 100vh;
+}
+.wrapper {
+  max-width: 600px;
+}

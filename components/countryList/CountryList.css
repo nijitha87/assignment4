@@ -1,0 +1,12 @@
+.country {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+p {
+  cursor: pointer;
+}
+
+p.selected {
+  color: #e3127e;
+}
