@@ -10,3 +10,17 @@
 .navbar-brand {
   margin-right: 0;
 }
+.logo {
+  height: 100px;
+  margin-right: 10px;
+}
+.logo img {
+  max-height: 100%;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: auto;
+  }
+}

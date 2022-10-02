@@ -21,14 +21,9 @@ const ContinentList: React.FC<Props> = ({
 
   return (
     <React.Fragment>
-      <Row className="justify-content-center" data-testid="continent-list">
+      <Row className="justify-content-center mt-4" data-testid="continent-list">
         {continents.map((continent, index) => (
-          <Col
-            xs={4}
-            key={continent}
-            className="text-center"
-            data-testid={'continent-list' + index}
-          >
+          <Col xs={5} sm={4} key={continent} data-testid={'continent-list' + index}>
             <Button
               className="btn-flat"
               active={continentSelected === continent}

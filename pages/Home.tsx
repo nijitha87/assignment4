@@ -1,4 +1,5 @@
 import React = require('react');
+import { Col } from 'react-bootstrap';
 import ContinentList from '../components/continentList/ContinentList';
 import CountryList from '../components/countryList/CountryList';
 import Layout from '../components/layout/Layout';
@@ -41,11 +42,16 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <h1 className="text-center m-3">
+      <h2 className="text-center m-5">
         Select region and click on the countries you want to highlight
-      </h1>
-      <ContinentList continents={continents} onRegionSelect={getCountryList} />
-      <CountryList countries={continentCountries} />
+      </h2>
+      <Col xs={{ span: 10, offset: 1 }}>
+        <ContinentList
+          continents={continents}
+          onRegionSelect={getCountryList}
+        />
+        <CountryList countries={continentCountries} />
+      </Col>
     </Layout>
   );
 };

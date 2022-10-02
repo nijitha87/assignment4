@@ -11,14 +11,14 @@ const Header = () => {
           Utopia Country Highlighter
         </Navbar.Text>
       </Col>
-      <Navbar.Brand className="text-center">
+      <Col className="logo text-center align-self-xs-end">
         <Image
           src="https://utopiamusic.com/logo.png"
-          roundedCircle
           fluid
+          roundedCircle
           alt="Utopia"
         />
-      </Navbar.Brand>
+      </Col>
     </Navbar>
   );
 };

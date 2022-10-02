@@ -15,11 +15,10 @@ const CountryList: React.FC<Props> = ({ countries }: Props) => {
   const selectCountries = (id: string) => {
     const selected = [...countriesSelected];
     const selectedIndex = countriesSelected.indexOf(id);
-    if(selectedIndex === -1) {
+    if (selectedIndex === -1) {
       selected.push(id);
-    }
-    else {
-      selected.splice(selectedIndex,1)
+    } else {
+      selected.splice(selectedIndex, 1);
     }
     setCountriesSelected(selected);
   };
@@ -30,10 +29,11 @@ const CountryList: React.FC<Props> = ({ countries }: Props) => {
 
   return (
     <React.Fragment>
-      <Row className="justify-content-center mt-5" data-testid="country-list">
+      <Row data-testid="country-list" className="mt-5">
         {countries.map((country: country, index) => (
           <Col
-            xs={3}
+            xs={4}
+            sm={3}
             className="country"
             key={country.id}
             data-testid={'country-list' + index}
