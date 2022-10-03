@@ -1,5 +1,5 @@
 import React = require('react');
-import { Col, Row, Button } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { country } from '../../types';
 
 import './CountryList.css';
